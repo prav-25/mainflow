@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CozyCup Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>BlissCup</h1>
+    <nav>
+      <a href="#">Home</a>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">Menu</a>
+        <div class="dropdown-content">
+          <a href="#">Hot Beverages</a>
+          <a href="#">Cold Drinks</a>
+          <a href="#">Snacks</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">About</a>
+        <div class="dropdown-content">
+          <a href="#">Our Story</a>
+          <a href="#">Team</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
+
+      <a href="#" id="contact-btn">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Your Daily Dose of Delight</h2>
+      <p>Freshly brewed coffee, BlissCup ambiance, and smiles served daily.</p>
+      <button class="btn">Explore Our Menu</button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Artisan Coffee</h3>
+      <p>We use locally roasted beans to craft the perfect cup of coffee just for you.</p>
+    </div>
+    <div class="feature">
+      <h3>Comfortable Space</h3>
+      <p>Relax in our warm, welcoming atmosphere with free Wi-Fi and comfy seating.</p>
+    </div>
+    <div class="feature">
+      <h3>Friendly Staff</h3>
+      <p>Our baristas are passionate about coffee and always ready to make your day.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact-section" style="display: none;">
+    <h2>Contact Us</h2>
+    <p>Email: hello@BlissCup.com</p>
+    <p>Phone: +91 9112999999</p>
+    <p>Address: 123 Chruch street,Bangalore</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BlissCup Coffee. All rights reserved.</p>
+  </footer>
+ <script>
+    // Toggle Contact Section
+    document.getElementById('contact-btn').addEventListener('click', function (e) {
+      e.preventDefault();
+      const contact = document.getElementById('contact-section');
+      contact.style.display = contact.style.display === 'none' ? 'block' : 'none';
+      contact.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+ 
+</body>
+
+</html>
